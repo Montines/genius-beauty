@@ -1,3 +1,35 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/play-v19-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/play-v19-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v32-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v32-latin-700.woff2') format('woff2');
+}
+
 :root {
   --color-brand-light: #2b7fff;
   --color-brand-dark: #011c44;
@@ -9,6 +41,14 @@
 /* Base */
 body {
   color: var(--color-brand-dark);
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+address {
+  font-style: normal;
 }
 
 ul {
@@ -18,6 +58,7 @@ ul {
 /* Button */
 .button {
   color: var(--color-secondary-light);
+  font-weight: 600;
   background-color: var(--color-brand-light);
   border: 2px solid var(--color-brand-light);
   border-radius: 32px;
@@ -32,26 +73,93 @@ ul {
 /* Link */
 .header-link {
   color: var(--color-brand-dark);
+  text-decoration: none;
 }
 
 .header-link:hover {
   color: var(--color-brand-light);
+  font-weight: 700;
+}
+
+.footer-link {
+  color: var(--color-secondary-light);
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: var(--color-brand-light);
+  font-weight: 700;
 }
 
 /* Hero section */
 .hero-title {
   color: var(--color-brand-light);
+  font-family: 'Play', sans-serif;
+  font-size: 140px;
+  font-weight: 700;
+  line-height: 114px;
+  text-transform: capitalize;
 }
 
 .hero-text {
   color: var(--color-primary-light);
+  font-size: 12px;
+  line-height: 18px;
 }
 
 /* Section */
 .section-title {
   color: var(--color-brand-dark);
+  font-family: 'Play', sans-serif;
+  font-size: 64px;
+  font-weight: 700;
 }
 
 .section-title .accent {
   color: var(--color-brand-light);
+}
+
+.section-title .capitalize {
+  color: var(--color-brand-light);
+  text-transform: capitalize;
+}
+
+/* About us section */
+.about-us-text {
+  font-size: 22px;
+  line-height: 38px;
+}
+
+.about-us-text .accent {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+/* Why we section */
+.why-we-text {
+  line-height: 24px;
+}
+
+/* Our procedures section */
+.our-procedures-text {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+/* Footer */
+.address-link {
+  color: var(--color-secondary-light);
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.address-link:hover {
+  color: var(--color-brand-light);
+  font-weight: 700;
+}
+
+.address-copyright {
+  color: var(--color-primary-light);
+  font-size: 13px;
 }
