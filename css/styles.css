@@ -39,12 +39,27 @@
 }
 
 /* Base */
+* {
+  box-sizing: border-box;
+}
+
 body {
   color: var(--color-brand-dark);
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: normal;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
 }
 
 address {
@@ -55,8 +70,15 @@ ul {
   list-style-type: none;
 }
 
+.container {
+  width: 100%;
+  max-width: 1264px;
+  margin: 0 auto;
+}
+
 /* Button */
 .button {
+  margin-bottom: 14px;
   color: var(--color-secondary-light);
   font-weight: 600;
   background-color: var(--color-brand-light);
@@ -93,7 +115,16 @@ ul {
 }
 
 /* Hero section */
+.hero-text-first {
+  margin-bottom: 16px;
+}
+
+.hero-section {
+  padding: 123.12px 0 126.81px 0;
+}
+
 .hero-title {
+  margin-bottom: 40px;
   color: var(--color-brand-light);
   font-family: 'Play', sans-serif;
   font-size: 140px;
@@ -126,6 +157,18 @@ ul {
 }
 
 /* About us section */
+.about-us-section {
+  padding-bottom: 88px;
+}
+
+.about-us-title {
+  margin-bottom: 40px;
+}
+
+.about-us-first {
+  margin-bottom: 40px;
+}
+
 .about-us-text {
   font-size: 22px;
   line-height: 38px;
@@ -137,17 +180,42 @@ ul {
 }
 
 /* Why we section */
+.why-we-section {
+  padding: 88px 0 48px 0;
+}
+
+.why-we-title {
+  margin-bottom: 48px;
+}
+
 .why-we-text {
   line-height: 24px;
 }
 
 /* Our procedures section */
+.our-procedures-section {
+  padding: 48px 0 48px 0;
+}
+
+.our-procedures-title {
+  margin-bottom: 48px;
+}
+
 .our-procedures-text {
   font-size: 22px;
   line-height: 26px;
 }
 
+/* Contact section */
+.contact-section {
+  padding: 48px 0 47px 0;
+}
+
 /* Footer */
+.footer-section {
+  padding: 47px 0 0 0;
+}
+
 .address-link {
   color: var(--color-secondary-light);
   font-size: 16px;
