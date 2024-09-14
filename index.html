@@ -10,21 +10,27 @@
   <body>
     <header>
       <div class="container">
-        <nav>
-          <a href="./index.html">
-            <img src="./images/logo.svg" alt="Логотип Beauty Zone" />
-          </a>
-          <ul>
-            <li><a class="header-link" href="#about-us-section">Про нас</a></li>
-            <li><a class="header-link" href="#why-we-section">Чому ми</a></li>
-            <li>
-              <a class="header-link" href="#our-procedures-section"
-                >Наші процедури</a
-              >
-            </li>
-            <li><a class="header-link" href="#contact-section">Контакти</a></li>
-          </ul>
-        </nav>
+        <div class="header-container">
+          <nav class="header-nav">
+            <a href="./index.html">
+              <img src="./images/logo.svg" alt="Логотип Beauty Zone" />
+            </a>
+            <ul class="header-menu">
+              <li>
+                <a class="header-link" href="#about-us-section">Про нас</a>
+              </li>
+              <li><a class="header-link" href="#why-we-section">Чому ми</a></li>
+              <li>
+                <a class="header-link" href="#our-procedures-section"
+                  >Наші процедури</a
+                >
+              </li>
+              <li>
+                <a class="header-link" href="#contact-section">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <main>
@@ -44,14 +50,16 @@
             Перевтілюйтесь в <span class="accent capitalize">beauty zone!</span>
           </h2>
           <p class="about-us-first about-us-text">
-            Наша косметологічна клініка пропонує вам професійні послуги з
-            догляду за шкірою обличчя та тіла.
+            Наша косметологічна клініка пропонує вам професійні послуги <br />
+            з догляду за шкірою обличчя та тіла.
           </p>
           <p class="about-us-text">
             B <span class="accent">beauty zone</span> ми гарантуємо найвищі
-            стандарти якості та приємний сервіс. Наші косметологічні процедури
-            та препарати допоможуть вам підтримувати свою красу та молодість. З
-            нами краса назавжди!
+            стандарти якості <br />
+            та приємний сервіс. Наші косметологічні процедури та препарати
+            <br />
+            допоможуть вам підтримувати свою красу та молодість. <br />
+            З нами краса назавжди!
           </p>
         </div>
       </section>
@@ -60,18 +68,20 @@
           <h2 class="why-we-title section-title">
             Чому люди <span class="accent">обирають нас</span>
           </h2>
-          <p class="why-we-text">
-            Всі наші косметологи мають вищу медичну освіту та стаж роботи від 5
-            років
-          </p>
-          <p class="why-we-text">
-            Використовуємо тільки професійне обладнання та косметику, перевірену
-            часом
-          </p>
-          <p class="why-we-text">
-            Наша мета - підкреслити переваги та приховати недоліки, а не
-            переробити
-          </p>
+          <div class="why-we-list">
+            <p class="why-we-card why-we-text">
+              Всі наші косметологи мають вищу медичну освіту та стаж роботи від
+              5 років
+            </p>
+            <p class="why-we-card why-we-text">
+              Використовуємо тільки професійне обладнання та косметику,
+              перевірену часом
+            </p>
+            <p class="why-we-card why-we-text">
+              Наша мета - підкреслити переваги та приховати недоліки, а не
+              переробити
+            </p>
+          </div>
         </div>
       </section>
       <section class="our-procedures-section" id="our-procedures-section">
@@ -79,14 +89,16 @@
           <h2 class="our-procedures-title section-title">
             Наші <span class="accent">процедури</span>
           </h2>
-          <p class="our-procedures-text">Маски для обличчя</p>
-          <p class="our-procedures-text">Ін'єкції для обличчя</p>
-          <p class="our-procedures-text">Очищення обличчя</p>
+          <div class="our-procedures-list">
+            <p class="our-procedures-text">Маски для обличчя</p>
+            <p class="our-procedures-text">Ін'єкції для обличчя</p>
+            <p class="our-procedures-text">Очищення обличчя</p>
+          </div>
         </div>
       </section>
       <section class="contact-section" id="contact-section">
         <div class="container">
-          <h2 class="section-title">
+          <h2 class="contact-title section-title">
             Як нас <span class="accent">знайти</span>
           </h2>
           <iframe
