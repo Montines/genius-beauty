@@ -144,6 +144,12 @@ ul {
 
 .hero-section {
   padding: 123.12px 0 126.81px 0;
+  background-image: url('../images/hero-photo.jpg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  width: 1501.957px;
+  height: 687.931px;
 }
 
 .hero-title {
@@ -244,9 +250,32 @@ ul {
   margin-bottom: 48px;
 }
 
+.format-card {
+  display: flex;
+}
+
 .our-procedures-text {
+  width: 344px;
+  height: 456px;
+  padding: 372px 77px 32px 115px;
+  border-radius: 120px 4px;
+  background: linear-gradient(
+    180deg,
+    rgba(1, 28, 68, 0) 48.53%,
+    rgba(1, 28, 68, 0.73) 84.61%,
+    #011c44 101.39%
+  );
   font-size: 22px;
   line-height: 26px;
+}
+
+.our-procedures-text.other {
+  background: linear-gradient(
+    180deg,
+    rgba(1, 28, 68, 0) 48.53%,
+    rgba(1, 28, 68, 0.73) 84.61%,
+    #011c44 101.39%
+  );
 }
 
 /* Contact section */
@@ -262,6 +291,10 @@ ul {
 /* Footer */
 .footer-section {
   padding: 47px 0 0 0;
+  background-image: url('../images/footer-background.png');
+  background-color: var(--color-brand-dark);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .address-link {
