@@ -38,7 +38,9 @@
         <div class="container">
           <p class="hero-text-first">Косметологічна клініка</p>
           <h1 class="hero-title">beauty zone</h1>
-          <button class="button" type="button">Замовити дзвінок</button>
+          <button class="button modal-btn-open" type="button">
+            Замовити дзвінок
+          </button>
           <p class="hero-text">
             Запишись та отримай безкоштовну консультацію нашого косметолога
           </p>
@@ -46,21 +48,39 @@
       </section>
       <section class="about-us-section" id="about-us-section">
         <div class="container">
-          <h2 class="about-us-title section-title">
-            Перевтілюйтесь в <span class="accent capitalize">beauty zone!</span>
-          </h2>
-          <p class="about-us-first about-us-text">
-            Наша косметологічна клініка пропонує вам професійні послуги <br />
-            з догляду за шкірою обличчя та тіла.
-          </p>
-          <p class="about-us-text">
-            B <span class="accent">beauty zone</span> ми гарантуємо найвищі
-            стандарти якості <br />
-            та приємний сервіс. Наші косметологічні процедури та препарати
-            <br />
-            допоможуть вам підтримувати свою красу та молодість. <br />
-            З нами краса назавжди!
-          </p>
+          <div class="about-us-container">
+            <div class="first-block-about">
+              <h2 class="about-us-title section-title">
+                Перевтілюйтесь в
+                <span class="accent capitalize">beauty zone!</span>
+              </h2>
+              <p class="about-us-first about-us-text">
+                Наша косметологічна клініка пропонує вам професійні послуги
+                <br />
+                з догляду за шкірою обличчя та тіла.
+              </p>
+              <p class="about-us-text">
+                B <span class="accent">beauty zone</span> ми гарантуємо найвищі
+                стандарти якості <br />
+                та приємний сервіс. Наші косметологічні процедури та препарати
+                <br />
+                допоможуть вам підтримувати свою красу та молодість. <br />
+                З нами краса назавжди!
+              </p>
+            </div>
+            <div class="second-block-about">
+              <img
+                class="about-photos-first"
+                src="./images/before-procedures.jpg"
+                alt="Before Beauty Zone"
+              />
+              <img
+                class="about-photos-second"
+                src="./images/after-procedures.jpg"
+                alt="After Beuaty Zone"
+              />
+            </div>
+          </div>
         </div>
       </section>
       <section class="why-we-section" id="why-we-section">
@@ -234,5 +254,12 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-btn-close" type="button">Close</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
