@@ -1,21 +1,66 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/play-v19-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/play-v19-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v32-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v32-latin-700.woff2') format('woff2');
+}
+
 :root {
   --color-brand-light: #2b7fff;
   --color-brand-dark: #011c44;
   --color-primary-light: #ffffff;
   --color-primary-dark: #4a4a4a;
+  --color-secondary-dark: #000;
+  --color-secondary-light: #747272;
 }
 
 /* Base */
 body {
   color: var(--color-brand-dark);
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
 }
 
 ul {
   list-style-type: none;
 }
 
+/* Button */
 .button {
   color: var(--color-primary-light);
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: normal;
   background-color: var(--color-brand-light);
   border: 2px solid var(--color-brand-light);
   border-radius: 32px;
@@ -28,28 +73,100 @@ ul {
 }
 
 /* Link */
-.link {
+.header-link {
   color: var(--color-brand-dark);
+  text-decoration: none;
 }
 
-.link:hover {
+.header-link:hover {
   color: var(--color-brand-light);
+  font-weight: 700;
+}
+
+.footer-link {
+  color: var(--color-brand-dark);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-link:hover {
+  color: var(--color-brand-light);
+  font-weight: 700;
 }
 
 /* Hero section */
 .hero-title {
   color: var(--color-brand-light);
+  font-family: 'Play', sans-serif;
+  font-size: 140px;
+  font-weight: 700;
+  line-height: 114px;
+  text-transform: capitalize;
 }
 
 .hero-section-text {
   color: var(--color-primary-dark);
+  font-size: 12px;
+  line-height: 18px;
 }
 
 /* Section title */
 .section-title {
   color: var(--color-brand-dark);
+  font-family: 'Play', sans-serif;
+  font-size: 64px;
+  font-weight: 700;
 }
 
 .section-title .accent {
   color: var(--color-brand-light);
+}
+
+.section-title .capitalize {
+  text-transform: capitalize;
+}
+
+/* About-us section */
+.about-us-text {
+  font-size: 22px;
+  line-height: 38px;
+}
+
+.about-us-text .capitalize {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+/* Why-we section */
+.why-we-text {
+  color: var(--color-secondary-dark);
+  line-height: 24px;
+}
+
+/* Our-procedures section */
+.our-procedures-text {
+  color: var(--color-primary-light);
+  background-color: #220808; /* Delete this style */
+  font-size: 22px;
+  line-height: 26px;
+}
+
+/* Footer */
+.address-link {
+  color: var(--color-primary-light);
+  background-color: #220808; /* Delete this style */
+  font-size: 16px;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.address-link:hover {
+  color: var(--color-brand-light);
+  font-weight: 700;
+}
+
+.address-copyright {
+  color: var(--color-secondary-light);
+  font-size: 13px;
+  font-style: normal;
 }
