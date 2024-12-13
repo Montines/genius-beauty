@@ -40,6 +40,10 @@
 }
 
 /* Base */
+* {
+  box-sizing: border-box;
+}
+
 body {
   color: var(--color-brand-dark);
   font-family: 'Roboto', sans-serif;
@@ -49,12 +53,30 @@ body {
   line-height: normal;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
 ul {
   list-style-type: none;
 }
 
+.container {
+  width: 100%;
+  max-width: 1488px;
+  margin: 0 auto;
+}
+
 /* Button */
 .button {
+  padding: 16px 32px;
+  margin-bottom: 14px;
   color: var(--color-primary-light);
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
@@ -95,7 +117,16 @@ ul {
 }
 
 /* Hero section */
+.hero-section {
+  padding-top: 16px;
+}
+
+.hero-section-first {
+  margin-bottom: 16px;
+}
+
 .hero-title {
+  margin-bottom: 40px;
   color: var(--color-brand-light);
   font-family: 'Play', sans-serif;
   font-size: 140px;
@@ -127,6 +158,14 @@ ul {
 }
 
 /* About-us section */
+.about-us-section {
+  padding-bottom: 88px;
+}
+
+.about-us-title {
+  margin-bottom: 40px;
+}
+
 .about-us-text {
   font-size: 22px;
   line-height: 38px;
@@ -137,13 +176,33 @@ ul {
   font-weight: 600;
 }
 
+.about-us-text.first {
+  margin-bottom: 40px;
+}
+
 /* Why-we section */
+.why-we-section {
+  padding: 88px 0 48px 0;
+}
+
+.why-we-title {
+  margin-bottom: 48px;
+}
+
 .why-we-text {
   color: var(--color-secondary-dark);
   line-height: 24px;
 }
 
 /* Our-procedures section */
+.procedures-section {
+  padding: 48px 0;
+}
+
+.procedures-title {
+  margin-bottom: 48px;
+}
+
 .our-procedures-text {
   color: var(--color-primary-light);
   background-color: #220808; /* Delete this style */
@@ -151,7 +210,20 @@ ul {
   line-height: 26px;
 }
 
+/* Contact section */
+.contact-section {
+  padding: 48px 0 47px 0;
+}
+
+.contact-title {
+  margin-bottom: 48px;
+}
+
 /* Footer */
+.footer {
+  padding-top: 47px;
+}
+
 .address-link {
   color: var(--color-primary-light);
   background-color: #220808; /* Delete this style */
