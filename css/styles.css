@@ -64,6 +64,8 @@ p {
 }
 
 ul {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 
@@ -71,6 +73,7 @@ ul {
   width: 100%;
   max-width: 1488px;
   margin: 0 auto;
+  padding: 0 24px;
 }
 
 /* Button */
@@ -102,7 +105,6 @@ ul {
 
 .header-link:hover {
   color: var(--color-brand-light);
-  font-weight: 700;
 }
 
 .footer-link {
@@ -113,7 +115,22 @@ ul {
 
 .footer-link:hover {
   color: var(--color-brand-light);
-  font-weight: 700;
+}
+
+/* Header */
+.header {
+  padding: 32px 0;
+}
+
+.header-nav {
+  display: flex;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  gap: 56px;
 }
 
 /* Hero section */
@@ -143,6 +160,7 @@ ul {
 
 /* Section title */
 .section-title {
+  text-align: center;
   color: var(--color-brand-dark);
   font-family: 'Play', sans-serif;
   font-size: 64px;
@@ -162,8 +180,24 @@ ul {
   padding-bottom: 88px;
 }
 
+.about-us-container {
+  display: flex;
+  gap: 32px;
+}
+
+.about-us-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 709px;
+}
+
+.about-us-photos {
+  max-width: 499px;
+}
+
 .about-us-title {
   margin-bottom: 40px;
+  text-align: start;
 }
 
 .about-us-text {
@@ -189,7 +223,21 @@ ul {
   margin-bottom: 48px;
 }
 
-.why-we-text {
+.why-we-list {
+  display: flex;
+  justify-content: center;
+  gap: 56px;
+}
+
+.format-card {
+  padding: 24px 32px;
+  border: 1px solid lightgrey; /*Remove Style*/
+  border-radius: 32px;
+  text-align: center;
+}
+
+.format-text {
+  align-items: center;
   color: var(--color-secondary-dark);
   line-height: 24px;
 }
@@ -204,6 +252,9 @@ ul {
 }
 
 .our-procedures-text {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
   color: var(--color-primary-light);
   background-color: #220808; /* Delete this style */
   font-size: 22px;

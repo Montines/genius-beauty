@@ -8,21 +8,25 @@
   </head>
 
   <body>
-    <header>
+    <header class="header">
       <div class="container">
-        <nav>
+        <nav class="header-nav">
           <a href="./index.html">
             <img src="./images/logo.svg" alt="Логотип Beauty Zone" />
           </a>
-          <ul>
-            <li><a class="header-link" href="#about-us-section">Про нас</a></li>
+          <ul class="header-menu">
+            <li>
+              <a class="header-link" href="#about-us-section">Про нас</a>
+            </li>
             <li><a class="header-link" href="#why-we-section">Чому ми</a></li>
             <li>
               <a class="header-link" href="#our-procedures-section"
                 >Наші процедури</a
               >
             </li>
-            <li><a class="header-link" href="#contact-section">Контакти</a></li>
+            <li>
+              <a class="header-link" href="#contact-section">Контакти</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -34,27 +38,35 @@
           <h1 class="hero-title">beauty zone</h1>
           <button class="button" type="button">Замовити дзвінок</button>
           <p class="hero-section-text">
-            Запишись та отримай безкоштовну консультацію нашого косметолога
+            Запишись та отримай безкоштовну <br />
+            консультацію нашого косметолога
           </p>
         </div>
       </section>
       <section class="about-us-section section" id="about-us-section">
         <div class="container">
-          <h2 class="about-us-title section-title">
-            Перевтілюйтесь в <span class="accent capitalize">beauty zone!</span>
-          </h2>
-          <p class="about-us-text first">
-            Наша косметологічна клініка пропонує вам професійні послуги з
-            догляду за шкірою обличчя та тіла.
-          </p>
-          <p class="about-us-text">
-            B <span class="capitalize">beauty zone</span> ми гарантуємо найвищі
-            стандарти якості та приємний сервіс. Наші косметологічні процедури
-            та препарати допоможуть вам підтримувати свою красу та молодість. З
-            нами краса назавжди!
-          </p>
-          <img src="./images/before.jpg" alt="Обличчя до Beauty Zone" />
-          <img src="./images/after.jpg" alt="Обличчя після Beuty Zone" />
+          <div class="about-us-container">
+            <div class="about-us-content">
+              <h2 class="about-us-title section-title">
+                Перевтілюйтесь в
+                <span class="accent capitalize">beauty zone!</span>
+              </h2>
+              <p class="about-us-text first">
+                Наша косметологічна клініка пропонує вам професійні послуги з
+                догляду за шкірою обличчя та тіла.
+              </p>
+              <p class="about-us-text">
+                B <span class="capitalize">beauty zone</span> ми гарантуємо
+                найвищі стандарти якості та приємний сервіс. Наші косметологічні
+                процедури та препарати допоможуть вам підтримувати свою красу та
+                молодість. З нами краса назавжди!
+              </p>
+            </div>
+            <div class="about-us-photos">
+              <img src="./images/before.jpg" alt="Обличчя до Beauty Zone" />
+              <img src="./images/after.jpg" alt="Обличчя після Beuty Zone" />
+            </div>
+          </div>
         </div>
       </section>
       <section class="why-we-section section" id="why-we-section">
@@ -62,18 +74,24 @@
           <h2 class="why-we-title section-title">
             Чому люди <span class="accent">обирають нас</span>
           </h2>
-          <ul class="why-we-text">
-            <li>
-              Всі наші косметологи мають вищу медичну освіту та стаж роботи від
-              5 років
+          <ul class="why-we-list">
+            <li class="format-card">
+              <p class="format-text">
+                Всі наші косметологи мають вищу медичну освіту та стаж роботи
+                від 5 років
+              </p>
             </li>
-            <li>
-              Використовуємо тільки професійне обладнання та косметику,
-              перевірену часом
+            <li class="format-card">
+              <p class="format-text">
+                Використовуємо тільки професійне обладнання та косметику,
+                перевірену часом
+              </p>
             </li>
-            <li>
-              Наша мета - підкреслити переваги та приховати недоліки, а не
-              переробити
+            <li class="format-card">
+              <p class="format-text">
+                Наша мета - підкреслити переваги та приховати недоліки, а не
+                переробити
+              </p>
             </li>
           </ul>
         </div>
