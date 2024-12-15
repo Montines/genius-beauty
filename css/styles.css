@@ -108,7 +108,7 @@ ul {
 }
 
 .footer-link {
-  color: var(--color-brand-dark);
+  color: var(--color-primary-light);
   text-decoration: none;
   font-size: 16px;
 }
@@ -136,6 +136,13 @@ ul {
 /* Hero section */
 .hero-section {
   padding-top: 16px;
+  background-image: url('../images/hero-section-background.jpg');
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.hero-section-container {
+  height: 552px;
 }
 
 .hero-section-first {
@@ -143,6 +150,7 @@ ul {
 }
 
 .hero-title {
+  width: 529px;
   margin-bottom: 40px;
   color: var(--color-brand-light);
   font-family: 'Play', sans-serif;
@@ -183,6 +191,7 @@ ul {
 .about-us-container {
   display: flex;
   gap: 32px;
+  flex-grow: 1;
 }
 
 .about-us-content {
@@ -251,10 +260,22 @@ ul {
   margin-bottom: 48px;
 }
 
-.our-procedures-text {
+.procedures-list {
   display: flex;
+  flex-direction: row;
   gap: 16px;
   justify-content: space-between;
+}
+
+.procedures-card {
+  border: 1px solid lightgrey; /*Delete This style*/
+  border-radius: 4px 120px;
+  width: 344px;
+  height: 456px;
+  flex-shrink: 0;
+}
+
+.our-procedures-text {
   color: var(--color-primary-light);
   background-color: #220808; /* Delete this style */
   font-size: 22px;
@@ -273,11 +294,12 @@ ul {
 /* Footer */
 .footer {
   padding-top: 47px;
+  background-image: url('../images/footer-background-image.png');
+  background-color: var(--color-brand-dark);
 }
 
 .address-link {
   color: var(--color-primary-light);
-  background-color: #220808; /* Delete this style */
   font-size: 16px;
   font-style: normal;
   text-decoration: none;
