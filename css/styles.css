@@ -268,6 +268,12 @@ ul {
 }
 
 .procedures-card {
+  background: linear-gradient(
+    180deg,
+    rgba(1, 28, 68, 0) 48.53%,
+    rgba(1, 28, 68, 0.73) 84.61%,
+    #011c44 101.39%
+  );
   border: 1px solid lightgrey; /*Delete This style*/
   border-radius: 4px 120px;
   width: 344px;
@@ -291,6 +297,25 @@ ul {
   margin-bottom: 48px;
 }
 
+/* Carousel */
+.carousel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--color-brand-dark);
+  cursor: pointer;
+}
+
+.carousel-button:hover {
+  background-color: var(--color-brand-light);
+  border: var(--color-primary-light);
+  fill: var(--color-primary-light);
+}
+
 /* Footer */
 .footer {
   padding-top: 47px;
@@ -308,6 +333,14 @@ ul {
 .address-link:hover {
   color: var(--color-brand-light);
   font-weight: 700;
+}
+
+.address-icon {
+  fill: var(--color-primary-light);
+}
+
+.address-icon:hover {
+  fill: var(--color-brand-light);
 }
 
 .address-copyright {
