@@ -40,7 +40,9 @@
 }
 
 /* Base */
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -61,6 +63,10 @@ h5,
 h6,
 p {
   margin-top: 0;
+}
+
+a {
+  display: inline-block;
 }
 
 ul {
@@ -252,6 +258,13 @@ ul {
 }
 
 /* Our-procedures section */
+.procedures-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
 .procedures-section {
   padding: 48px 0;
 }
@@ -290,11 +303,22 @@ ul {
 
 /* Contact section */
 .contact-section {
-  padding: 48px 0 47px 0;
+  padding: 48px 0 94px 0;
+}
+
+.contact-container {
+  justify-content: center;
+  gap: 32px;
 }
 
 .contact-title {
   margin-bottom: 48px;
+}
+
+.contact-map {
+  border-radius: 32px;
+  border: none;
+  flex-shrink: 0;
 }
 
 /* Carousel */
@@ -302,6 +326,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   width: 44px;
   height: 44px;
   background-color: transparent;
@@ -318,9 +343,32 @@ ul {
 
 /* Footer */
 .footer {
-  padding-top: 47px;
   background-image: url('../images/footer-background-image.png');
   background-color: var(--color-brand-dark);
+  padding: 56px 0;
+}
+
+.footer-container {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-nav,
+.footer-address {
+  flex-basis: 50%;
+  display: flex;
+  flex-grow: 1;
+  gap: 20px;
+}
+
+.footer-logo,
+.footer-menu {
+  flex-grow: 1;
+}
+
+.address-list,
+.address-info {
+  flex-grow: 1;
 }
 
 .address-link {
@@ -332,7 +380,6 @@ ul {
 
 .address-link:hover {
   color: var(--color-brand-light);
-  font-weight: 700;
 }
 
 .address-icon {
