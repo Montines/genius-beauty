@@ -107,6 +107,7 @@ ul {
 .header-link {
   color: var(--color-brand-dark);
   text-decoration: none;
+  transition: color 0.3s;
 }
 
 .header-link:hover {
@@ -125,7 +126,13 @@ ul {
 
 /* Header */
 .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   padding: 32px 0;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(5px);
 }
 
 .header-nav {
@@ -141,13 +148,21 @@ ul {
 
 /* Hero section */
 .hero-section {
-  padding-top: 16px;
-  background-image: url('../images/hero-section-background.jpg');
+  padding-top: 177px;
+  background-image: linear-gradient(
+      89deg,
+      #fff 30.62%,
+      rgba(255, 255, 255, 0.85) 41.31%,
+      rgba(255, 255, 255, 0.19) 58.65%,
+      rgba(255, 255, 255, 0) 72.78%
+    ),
+    url(../images/hero-section-background.png);
   background-repeat: no-repeat;
   background-position: right;
 }
 
 .hero-section-container {
+  padding-left: 106px;
   height: 552px;
 }
 
@@ -292,6 +307,11 @@ ul {
   width: 344px;
   height: 456px;
   flex-shrink: 0;
+  transition: transform 0.3s;
+}
+
+.procedures-card:hover {
+  transform: scale(1.05);
 }
 
 .our-procedures-text {
@@ -339,6 +359,10 @@ ul {
   background-color: var(--color-brand-light);
   border: var(--color-primary-light);
   fill: var(--color-primary-light);
+}
+
+.carousel-button.next {
+  transform: rotate(180deg);
 }
 
 /* Footer */
@@ -418,6 +442,8 @@ ul {
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px 0;
+  transition: opacity 0.3s, visibility 0.3s;
 }
 
 .backdrop.is-hidden {
@@ -428,8 +454,10 @@ ul {
 
 .modal {
   position: relative;
-  width: 880px;
-  height: 880px;
+  width: 100%;
+  max-width: 880px;
+  height: 100%;
+  max-height: 880px;
   background-color: var(--color-brand-dark);
   border-radius: 48px;
 }
