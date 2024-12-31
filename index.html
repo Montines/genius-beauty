@@ -288,7 +288,7 @@
         <button class="modal-btn-close" type="button">Close</button>
         <h2>Замовити дзвінок</h2>
         <p>Запишіться безкоштовно та отримайте подарунок</p>
-        <form name="contact-form" autocomplete="off" novalidate>
+        <form name="contact-form" autocomplete="off">
           <div class="form-field">
             <label class="form-label visually-hidden" for="username"
               >Ваше ім'я та прізвище</label
@@ -299,6 +299,8 @@
               name="user-name"
               id="user-name"
               placeholder="Ваше ім'я та прізвище"
+              pattern="^\s*\S+\s+\S+\s*$"
+              required
             />
           </div>
 
@@ -312,6 +314,8 @@
               name="user-tel"
               id="user-tel"
               placeholder="Ваш номер телефону"
+              pattern="^\+[0-9]{12}"
+              required
             />
           </div>
 
@@ -325,6 +329,7 @@
               name="user-email"
               id="user-email"
               placeholder="Ваша електронна пошта"
+              required
             />
           </div>
           <button class="form-button button" type="submit">
