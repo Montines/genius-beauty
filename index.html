@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beauty Zone</title>
     <!-- Styles -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./scss/main.min.css" />
   </head>
 
   <body>
@@ -68,8 +68,16 @@
               </p>
             </div>
             <div class="about-us-photos">
-              <img src="./images/before.jpg" alt="Обличчя до Beauty Zone" />
-              <img src="./images/after.jpg" alt="Обличчя після Beuty Zone" />
+              <img
+                class="about-image-before"
+                src="./images/before.jpg"
+                alt="Обличчя до Beauty Zone"
+              />
+              <img
+                class="about-image-after"
+                src="./images/after.jpg"
+                alt="Обличчя після Beuty Zone"
+              />
             </div>
           </div>
         </div>
@@ -114,12 +122,27 @@
             </button>
             <ul class="procedures-list">
               <li class="procedures-card">
+                <img
+                  class="procedures-image"
+                  src="./images/masks-face.jpg"
+                  alt="Masks face"
+                />
                 <p class="our-procedures-text">Маски для обличчя</p>
               </li>
               <li class="procedures-card">
+                <img
+                  class="procedures-image"
+                  src="./images/injections-face.jpg"
+                  alt="Injections face"
+                />
                 <p class="our-procedures-text">Ін'єкції для обличчя</p>
               </li>
               <li class="procedures-card">
+                <img
+                  class="procedures-image"
+                  src="./images/cleaning-face.jpg"
+                  alt="Cleaning face"
+                />
                 <p class="our-procedures-text">Очищення обличчя</p>
               </li>
             </ul>
