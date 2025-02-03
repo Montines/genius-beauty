@@ -10,30 +10,32 @@
     url(../images/hero-section-background.png);
   background-repeat: no-repeat;
   background-position: right;
-}
 
-.hero-section-container {
-  padding-left: 106px;
-  height: 552px;
-}
+  &__container {
+    padding-left: 106px;
+    height: 552px;
+  }
 
-.hero-section-first {
-  margin-bottom: 16px;
-}
+  &__first {
+    margin-bottom: 16px;
+  }
 
-.hero-title {
-  width: 529px;
-  margin-bottom: 40px;
-  color: var(--color-brand-light);
-  font-family: 'Play', sans-serif;
-  font-size: 140px;
-  font-weight: 700;
-  line-height: 114px;
-  text-transform: capitalize;
-}
+  &__title {
+    width: 529px;
+    margin-bottom: 40px;
+    color: var(--color-brand-light);
+    font-family: 'Play', sans-serif;
+    font-size: 140px;
+    font-weight: 700;
+    line-height: 114px;
+    text-transform: capitalize;
+  }
 
-.hero-section-text {
-  color: var(--color-primary-dark);
-  font-size: 12px;
-  line-height: 18px;
+  &__text {
+    color: var(--color-primary-dark);
+    max-width: 238px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 18px;
+  }
 }

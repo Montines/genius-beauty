@@ -1,0 +1,42 @@
+.contact-section {
+  padding: 48px 0 94px 0;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  &__title {
+    margin-bottom: 48px;
+  }
+
+  &__map {
+    border-radius: 32px;
+    border: none;
+    flex-shrink: 0;
+  }
+
+  &__form-field {
+    margin-bottom: 16px;
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto 8px;
+  }
+
+  &__terms {
+    color: var(--color-secondary-light);
+    margin: 0 auto;
+    max-width: 213px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.form-terms-link {
+  color: var(--color-secondary-light);
+  text-underline-offset: 2px;
+}

@@ -1,0 +1,43 @@
+.form-field {
+  margin-bottom: 24px;
+}
+
+.form-label {
+  display: block;
+}
+
+.form-input {
+  padding: 18px 32px;
+  width: 100%;
+  border: 2px solid var(--color-secondary-light);
+  border-radius: 32px;
+}
+
+.form-input:focus {
+  background-color: var(--color-secondary-light);
+  border-color: var(--color-secondary-light);
+  outline: none;
+}
+
+.form-input::placeholder {
+  color: var(--color-primary-light);
+}
+
+.form-button {
+  display: block;
+  margin: 0 auto 8px;
+}
+
+.form-terms {
+  color: var(--color-secondary-light);
+  margin: 0 auto;
+  max-width: 213px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.form-terms-link {
+  color: var(--color-secondary-light);
+  text-underline-offset: 2px;
+}

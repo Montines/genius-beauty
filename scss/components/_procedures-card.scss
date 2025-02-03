@@ -1,0 +1,21 @@
+.procedures-card {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    rgba(1, 28, 68, 0) 48.53%,
+    rgba(1, 28, 68, 0.73) 84.61%,
+    #011c44 101.39%
+  );
+  border-radius: 4px 120px;
+  width: 344px;
+  height: 456px;
+  flex-shrink: 0;
+  transition: transform 0.3s;
+}
+
+.procedures-card:hover {
+  transform: scale(1.05);
+}

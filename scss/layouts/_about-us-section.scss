@@ -1,0 +1,46 @@
+.about-us-section {
+  padding-bottom: 88px;
+
+  &__container {
+    display: flex;
+    gap: 32px;
+    flex-grow: 1;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    max-width: 709px;
+  }
+}
+
+.about-us-photos {
+  max-width: 499px;
+}
+
+.about-image-before {
+  border-radius: 50%;
+}
+
+.about-image-after {
+  border-radius: 50%;
+}
+
+.about-us-title {
+  margin-bottom: 40px;
+  text-align: start;
+}
+
+.about-us-text {
+  font-size: 22px;
+  line-height: 38px;
+}
+
+.about-us-text .capitalize {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.about-us-text.first {
+  margin-bottom: 40px;
+}

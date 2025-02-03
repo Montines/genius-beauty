@@ -1,0 +1,24 @@
+.input {
+  margin-bottom: 16px;
+
+  &__label {
+    display: block;
+  }
+
+  &__control {
+    padding: 18px 32px;
+    width: 100%;
+    border: 2px solid var(--color-secondary-light);
+    border-radius: 32px;
+
+    &:focus {
+      background-color: var(--color-secondary-light);
+      border-color: var(--color-secondary-light);
+      outline: none;
+    }
+
+    &::placeholder {
+      color: var(--color-primary-light);
+    }
+  }
+}
