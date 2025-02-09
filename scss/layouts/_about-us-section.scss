@@ -20,20 +20,37 @@
 
 .about-image-before {
   border-radius: 50%;
+
+  @media screen and (max-width: $bp-desktop) {
+    display: none;
+  }
 }
 
 .about-image-after {
   border-radius: 50%;
+
+  @media screen and (max-width: $bp-desktop) {
+    display: none;
+  }
 }
 
 .about-us-title {
   margin-bottom: 40px;
   text-align: start;
+
+  @media screen and (max-width: $bp-desktop) {
+    font-size: 32px;
+  }
 }
 
 .about-us-text {
   font-size: 22px;
   line-height: 38px;
+
+  @media screen and (max-width: $bp-desktop) {
+    font-size: 18px;
+    line-height: normal;
+  }
 }
 
 .about-us-text .capitalize {

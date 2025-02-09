@@ -4,17 +4,38 @@
   left: 0;
   width: 100%;
   padding: 32px 0;
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(5px);
+
+  @media screen and (min-width: $bp-desktop) {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(5px);
+  }
 
   &__nav {
     display: flex;
   }
 
   &__menu {
-    display: flex;
-    justify-content: center;
-    flex-grow: 1;
-    gap: 56px;
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      justify-content: center;
+      flex-grow: 1;
+      gap: 56px;
+    }
+  }
+
+  &__burger {
+    background-color: transparent;
+    border: none;
+    fill: var(--color-primary-light);
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: block;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
   }
 }

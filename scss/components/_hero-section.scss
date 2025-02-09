@@ -11,17 +11,28 @@
   background-repeat: no-repeat;
   background-position: right;
 
+  @media screen and (max-width: $bp-desktop) {
+    padding-top: 70px;
+  }
+
   &__container {
-    padding-left: 106px;
     height: 552px;
   }
 
   &__first {
     margin-bottom: 16px;
+
+    @media screen and (max-width: $bp-desktop) {
+      margin-bottom: 16px;
+      text-align: center;
+      font-size: 12px;
+      line-height: 18px;
+      margin: 0;
+    }
   }
 
   &__title {
-    width: 529px;
+    max-width: 529px;
     margin-bottom: 40px;
     color: var(--color-brand-light);
     font-family: 'Play', sans-serif;
@@ -29,6 +40,14 @@
     font-weight: 700;
     line-height: 114px;
     text-transform: capitalize;
+
+    @media screen and (max-width: $bp-desktop) {
+      max-width: none;
+      font-size: 54px;
+      text-align: center;
+      line-height: 46px;
+      margin-bottom: 32px;
+    }
   }
 
   &__text {
@@ -37,5 +56,9 @@
     text-align: center;
     font-size: 12px;
     line-height: 18px;
+
+    @media screen and (max-width: $bp-desktop) {
+      margin: 0 auto;
+    }
   }
 }

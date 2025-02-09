@@ -1,16 +1,17 @@
 *,
 *::after,
 *::before {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-	color: var(--color-brand-dark);
-	font-family: 'Roboto', sans-serif;
-	font-size: 18px;
-	font-weight: 400;
-	font-style: normal;
-	line-height: normal;
+  color: var(--color-brand-dark);
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  margin: 0;
 }
 
 h1,
@@ -20,15 +21,15 @@ h4,
 h5,
 h6,
 p {
-	margin-top: 0;
+  margin-top: 0;
 }
 
 a {
-	display: inline-block;
+  display: inline-block;
 }
 
 ul {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
