@@ -1,0 +1,46 @@
+:root {
+  --color-primary-dark: #4a4a4a;
+  --color-primary-light: #fff;
+  --color-brand-light: #2b7fff;
+  --color-brand-dark: #011c44;
+}
+
+/* Base */
+body {
+  color: var(--color-brand-dark);
+}
+
+ul {
+  list-style-type: none;
+}
+
+.button {
+  color: var(--color-primary-light);
+  background: var(--color-brand-light);
+  border: 2px solid var(--color-brand-light);
+  border-radius: 32px;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: var(--color-brand-dark);
+  background-color: transparent;
+}
+
+/* Link */
+.link {
+  color: var(--color-brand-dark);
+}
+
+.link:hover {
+  color: var(--color-brand-light);
+}
+
+/* Hero section */
+.hero-title {
+  color: var(--color-brand-dark);
+}
+
+.section-title .accent {
+  color: var(--color-brand-light);
+}
