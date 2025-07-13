@@ -10,19 +10,40 @@
   <body>
     <header>
       <div class="container">
-        <nav>
-          <a href="./index.html">
-            <img src="./images/logo.svg" alt="Логотип Beauty Zone" />
-          </a>
-          <ul>
-            <li><a class="link" href="#transform-section">Про нас</a></li>
-            <li><a class="link" href="#why-we-section">Чому ми</a></li>
-            <li>
-              <a class="link" href="#procedures-section">Наші процедури</a>
-            </li>
-            <li><a class="link" href="#contact-section">Контакти</a></li>
-          </ul>
-        </nav>
+        <div class="header-container">
+          <nav class="header-nav">
+            <a href="./index.html">
+              <img src="./images/logo.svg" alt="Логотип Beauty Zone" />
+            </a>
+            <ul class="header-menu">
+              <li><a class="link" href="#transform-section">Про нас</a></li>
+              <li><a class="link" href="#why-we-section">Чому ми</a></li>
+              <li>
+                <a class="link" href="#procedures-section">Наші процедури</a>
+              </li>
+              <li><a class="link" href="#contact-section">Контакти</a></li>
+            </ul>
+          </nav>
+          <address class="address-menu">
+            <ul>
+              <li>
+                <a href="#">
+                  <!-- telephone -->
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <!-- facebook -->
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <!-- instagram -->
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
     </header>
     <main>
@@ -32,25 +53,38 @@
           <h1 class="hero-title">beauty zone</h1>
           <button class="button" type="button">Замовити дзвінок</button>
           <p class="hero-text">
-            Запишись та отримай безкоштовну консультацію нашого косметолога
+            Запишись та отримай безкоштовну <br />
+            консультацію нашого косметолога
           </p>
         </div>
       </section>
       <section class="transform-section" id="transform-section">
         <div class="container">
-          <h2 class="transform-title section-title">
-            Перевтілюйтесь в <span class="accent capitalize">beauty zone!</span>
-          </h2>
-          <p class="transform-text">
-            Наша косметологічна клініка пропонує вам професійні послуги з
-            догляду за шкірою обличчя та тіла.
-          </p>
-          <p class="transform-text">
-            B <span class="accent">beauty zone</span> ми гарантуємо найвищі
-            стандарти якості та приємний сервіс. Наші косметологічні процедури
-            та препарати допоможуть вам підтримувати свою красу та молодість. З
-            нами краса назавжди!
-          </p>
+          <div class="transform-container">
+            <div class="transform-menu">
+              <h2 class="transform-title section-title">
+                Перевтілюйтесь в
+                <span class="accent capitalize">beauty zone!</span>
+              </h2>
+              <p class="transform-text">
+                Наша косметологічна клініка пропонує вам професійні послуги
+                <br />
+                з догляду за шкірою обличчя та тіла.
+              </p>
+              <p class="transform-text">
+                B <span class="accent">beauty zone</span> ми гарантуємо найвищі
+                стандарти якості <br />
+                та приємний сервіс. Наші косметологічні процедури та препарати
+                <br />
+                допоможуть вам підтримувати свою красу та молодість. <br />
+                З нами краса назавжди!
+              </p>
+            </div>
+            <div class="images-menu">
+              <img src="./images/before.png" alt="Перед Beauty Zone" />
+              <img src="./images/after.png" alt="Після Beuty Zone" />
+            </div>
+          </div>
         </div>
       </section>
       <section class="why-we-section" id="why-we-section">
@@ -83,15 +117,17 @@
           <h2 class="section-title center">
             Наші <span class="accent">процедури</span>
           </h2>
-          <article>
-            <p class="procedures-text">Маски для обличчя</p>
-          </article>
-          <article>
-            <p class="procedures-text">Ін'єкції для обличчя</p>
-          </article>
-          <article>
-            <p class="procedures-text">Очищення обличчя</p>
-          </article>
+          <div class="procedures-list">
+            <article class="format-card">
+              <p class="procedures-text">Маски для обличчя</p>
+            </article>
+            <article class="format-card">
+              <p class="procedures-text">Ін'єкції для обличчя</p>
+            </article>
+            <article class="format-card">
+              <p class="procedures-text">Очищення обличчя</p>
+            </article>
+          </div>
         </div>
       </section>
       <section class="contact-section" id="contact-section">
