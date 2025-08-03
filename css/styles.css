@@ -76,9 +76,11 @@ address {
 
 /* Button */
 .button {
+  padding: 16px;
   margin-bottom: 14px;
-  color: var(--color-primary-light);
+  font-size: 22px;
   font-weight: 600;
+  color: var(--color-primary-light);
   background: var(--color-brand-light);
   border: 2px solid var(--color-brand-light);
   border-radius: 32px;
@@ -146,12 +148,21 @@ address {
 }
 
 /* Hero section */
+.hero-section {
+  background-image: url("../images/hero-background-image.png");
+  background-repeat: no-repeat;
+  background-position: center right;
+  flex-shrink: 0;
+  background-size: cover;
+}
+
 .first-text {
   padding-top: 60px;
   margin-bottom: 16px;
 }
 
 .hero-title {
+  width: 529px;
   margin-bottom: 40px;
   color: var(--color-brand-light);
   font-family: "Play", sans-serif;
@@ -212,12 +223,19 @@ address {
 
 .format-card {
   padding: 372px 77px 32px 115px;
+  background-image: linear-gradient(
+    180deg,
+    rgba(1, 28, 68, 0) 48.53%,
+    rgba(1, 28, 68, 0.73) 84.61%,
+    #011c44 101.39%
+  );
   border: 1px solid lightslategray;
   border-radius: 120px 4px;
 }
 
 .procedures-text {
   line-height: 26px;
+  color: var(--color-primary-light);
 }
 
 /* Contact section */
@@ -228,10 +246,12 @@ address {
 /* Footer */
 .footer {
   padding: 47px 0 0 0;
+  background-image: url("../images/footer-background-image.png");
+  background-color: var(--color-brand-dark);
 }
 
 .link-footer {
-  color: var(--color-brand-dark);
+  color: var(--color-primary-light);
   font-size: 16px;
   text-decoration: none;
 }
