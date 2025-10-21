@@ -1,0 +1,60 @@
+:root {
+  --color-primary-dark: #011c44;
+  --color-primary-light: #ffffff;
+  --color-brand-dark: #4a4a4a;
+  --color-brand-light: #2b7fff;
+}
+
+/* Base */
+ul {
+  list-style-type: none;
+}
+
+body {
+  color: var(--color-primary-dark);
+}
+
+/* Button */
+.button {
+  color: var(--color-primary-light);
+  background-color: var(--color-brand-light);
+  border: 2px solid var(--color-brand-light);
+  border-radius: 32px;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: var(--color-primary-dark);
+  background-color: transparent;
+}
+
+/* Link */
+.header-link {
+  color: var(--color-primary-dark);
+}
+
+.header-link:hover {
+  color: var(--color-brand-light);
+}
+
+.footer-link {
+  color: var(--color-primary-light);
+}
+
+.footer-link:hover {
+  color: var(--color-brand-light);
+}
+
+/* Hero section */
+.hero-title {
+  color: var(--color-brand-light);
+}
+
+.hero-text-last {
+  color: var(--color-brand-dark);
+}
+
+/* Section title */
+.section-title .accent {
+  color: var(--color-brand-light);
+}
