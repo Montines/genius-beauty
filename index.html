@@ -8,23 +8,43 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
-        <nav>
-          <a href="#">
-            <img src="./images/logo.svg" alt="Логоти Beauty Zone" />
-          </a>
-          <ul>
-            <li><a class="header-link" href="#about-us-section">Про нас</a></li>
-            <li><a class="header-link" href="#why-we-section">Чому ми</a></li>
-            <li>
-              <a class="header-link" href="#our-procedures-section"
-                >Наші процедури</a
-              >
-            </li>
-            <li><a class="header-link" href="#contact-section">Контакти</a></li>
-          </ul>
-        </nav>
+        <div class="header-container">
+          <nav class="header-nav">
+            <a href="#">
+              <img src="./images/logo.svg" alt="Логоти Beauty Zone" />
+            </a>
+            <ul class="header-menu">
+              <li>
+                <a class="header-link" href="#about-us-section">Про нас</a>
+              </li>
+              <li><a class="header-link" href="#why-we-section">Чому ми</a></li>
+              <li>
+                <a class="header-link" href="#our-procedures-section"
+                  >Наші процедури</a
+                >
+              </li>
+              <li>
+                <a class="header-link" href="#contact-section">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-icons">
+            <img
+              src="./images/telephone-icon-first.svg"
+              alt="Логотип Телефону"
+            />
+            <img
+              src="./images/facebook-icon-first.svg"
+              alt="Логотип Фейсбука"
+            />
+            <img
+              src="./images/instagram-icon-first.svg"
+              alt="Логотип Інстаграму"
+            />
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -34,7 +54,8 @@
           <h1 class="hero-title">beauty zone</h1>
           <button class="button" type="button">Замовити дзвінок</button>
           <p class="hero-text-last">
-            Запишись та отримай безкоштовну консультацію нашого косметолога
+            Запишись та отримай безкоштовну <br />
+            консультацію нашого косметолога
           </p>
         </div>
       </section>
@@ -90,19 +111,19 @@
           <h2 class="our-procedures-title section-title">
             Наші <span class="accent">процедури</span>
           </h2>
-          <ul>
-            <li>
-              <article>
+          <ul class="format-list">
+            <li class="format-item">
+              <article class="format-card">
                 <h2 class="our-procedures-text">Маски для обличчя</h2>
               </article>
             </li>
-            <li>
-              <article>
+            <li class="format-item">
+              <article class="format-card">
                 <h2 class="our-procedures-text">Ін'єкції для обличчя</h2>
               </article>
             </li>
-            <li>
-              <article>
+            <li class="format-item">
+              <article class="format-card">
                 <h2 class="our-procedures-text">Очищення обличчя</h2>
               </article>
             </li>

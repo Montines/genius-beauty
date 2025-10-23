@@ -84,7 +84,9 @@ section {
 /* Button */
 .button {
   color: var(--color-primary-light);
+  padding: 16px 32px;
   margin-bottom: 14px;
+  font-size: 18px;
   font-weight: 600;
   background-color: var(--color-brand-light);
   border: 2px solid var(--color-brand-light);
@@ -117,6 +119,31 @@ section {
   color: var(--color-brand-light);
 }
 
+/* Header */
+.header {
+  background-color: lightgray;
+  padding: 32px 100px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-nav {
+  display: flex;
+  flex-grow: 1;
+}
+
+.header-menu {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  gap: 56px;
+}
+
 /* Hero section */
 .hero-section {
   padding-top: 17px;
@@ -135,13 +162,17 @@ section {
   font-weight: 700;
   line-height: 114px;
   text-transform: capitalize;
+  width: 529px;
 }
 
 .hero-text-last {
+  display: flex;
+  justify-content: center;
   color: var(--color-brand-dark);
   margin-bottom: 0;
   font-size: 12px;
   line-height: 18px;
+  max-width: 238px;
 }
 
 /* Section title */
@@ -203,6 +234,21 @@ section {
   margin-bottom: 48px;
 }
 
+.format-list {
+  display: flex;
+  gap: 16px;
+}
+
+.formats-item {
+  flex-basis: calc(100% / 3);
+}
+
+.format-card {
+  padding: 372px 77px 32px 115px;
+  border: 1px solid lightgray;
+  border-radius: 4px 120px;
+}
+
 .our-procedures-text {
   font-size: 22px;
   line-height: 26px;
@@ -219,6 +265,7 @@ section {
 
 /* Footer */
 .footer {
+  background-color: lightgray;
   padding-top: 47px;
 }
 
