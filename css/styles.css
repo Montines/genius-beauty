@@ -38,8 +38,8 @@
 }
 
 /* Base */
-ul {
-  list-style-type: none;
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -48,15 +48,43 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: normal;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
 }
 
 address {
   font-style: normal;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+section {
+  padding: 48px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
 /* Button */
 .button {
   color: var(--color-primary-light);
+  margin-bottom: 14px;
   font-weight: 600;
   background-color: var(--color-brand-light);
   border: 2px solid var(--color-brand-light);
@@ -90,8 +118,18 @@ address {
 }
 
 /* Hero section */
+.hero-section {
+  padding-top: 17px;
+  padding-bottom: 126px;
+}
+
+.hero-text-first {
+  margin-bottom: 16px;
+}
+
 .hero-title {
   color: var(--color-brand-light);
+  margin-bottom: 40px;
   font-family: "Play", sans-serif;
   font-size: 140px;
   font-weight: 700;
@@ -101,6 +139,7 @@ address {
 
 .hero-text-last {
   color: var(--color-brand-dark);
+  margin-bottom: 0;
   font-size: 12px;
   line-height: 18px;
 }
@@ -121,7 +160,17 @@ address {
 }
 
 /* About us section */
+.about-us-section {
+  padding-top: 0;
+  padding-bottom: 88px;
+}
+
+.about-us-title {
+  margin-bottom: 40px;
+}
+
 .about-us-text {
+  margin-bottom: 40px;
   font-size: 22px;
   line-height: 38px;
 }
@@ -131,18 +180,48 @@ address {
   font-weight: 600;
 }
 
+.about-us-text.last {
+  margin-bottom: 0;
+}
+
 /* Why we section */
+.why-we-section {
+  padding-top: 88px;
+  padding-bottom: 48px;
+}
+
+.why-we-title {
+  margin-bottom: 48px;
+}
+
 .why-we-text {
   line-height: 24px;
 }
 
 /* Our procedures section */
+.our-procedures-title {
+  margin-bottom: 48px;
+}
+
 .our-procedures-text {
   font-size: 22px;
   line-height: 26px;
 }
 
+/* Contact section */
+.contact-section {
+  padding-bottom: 47px;
+}
+
+.contact-title {
+  margin-bottom: 48px;
+}
+
 /* Footer */
+.footer {
+  padding-top: 47px;
+}
+
 .address-link {
   color: var(--color-primary-light);
   font-size: 16px;
