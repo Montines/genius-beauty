@@ -146,6 +146,10 @@ section {
 
 /* Hero section */
 .hero-section {
+  background-image: url("../images/hero-background.png");
+  background-repeat: no-repeat;
+  background-position: 700px;
+  background-size: contain;
   padding-top: 17px;
   padding-bottom: 126px;
 }
@@ -190,20 +194,32 @@ section {
   text-transform: capitalize;
 }
 
+.section-title.centered {
+  text-align: center;
+}
+
 /* About us section */
 .about-us-section {
   padding-top: 0;
   padding-bottom: 88px;
 }
 
+.about-us-container {
+  display: flex;
+  gap: 28px;
+}
+
 .about-us-title {
+  margin-top: 40px;
   margin-bottom: 40px;
+  max-width: 549px;
 }
 
 .about-us-text {
   margin-bottom: 40px;
   font-size: 22px;
   line-height: 38px;
+  max-width: 844px;
 }
 
 .about-us-text .capitalize {
@@ -244,12 +260,21 @@ section {
 }
 
 .format-card {
+  height: 456px;
+  background: linear-gradient(
+    180deg,
+    rgba(1, 28, 68, 0) 48.53%,
+    rgba(1, 28, 68, 0.73) 84.61%,
+    #011c44 101.39%
+  );
   padding: 372px 77px 32px 115px;
   border: 1px solid lightgray;
   border-radius: 4px 120px;
 }
 
 .our-procedures-text {
+  width: 152px;
+  color: var(--color-primary-light);
   font-size: 22px;
   line-height: 26px;
 }
@@ -265,7 +290,11 @@ section {
 
 /* Footer */
 .footer {
-  background-color: lightgray;
+  background-image: url("../images/footer-background.png");
+  background-color: var(--color-primary-dark);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding-top: 47px;
 }
 
