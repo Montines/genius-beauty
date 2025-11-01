@@ -51,6 +51,11 @@ body {
   margin: 0;
 }
 
+main {
+  position: relative;
+  z-index: 1;
+}
+
 h1,
 h2,
 h3,
@@ -217,8 +222,22 @@ section {
 
 /* About us section */
 .about-us-section {
-  padding-top: 0;
-  padding-bottom: 88px;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 200px; /* робимо місце для перекриття хвилі */
+}
+
+.about-us-section::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1905px; /* можна поставити ширше, щоб охопити весь екран */
+  max-width: 200%;
+  height: 600px; /* підлаштуй під розмір твоєї SVG */
+  background: url("../images/wave-bg.svg") no-repeat center top/cover;
+  pointer-events: none;
+  z-index: 2; /* поверх about-us, над why-we треба встановити why-we нижче або залишити auto */
 }
 
 .about-us-container {
@@ -250,8 +269,9 @@ section {
 
 /* Why we section */
 .why-we-section {
-  padding-top: 88px;
-  padding-bottom: 48px;
+  position: relative;
+  z-index: 1;
+  padding-top: 160px;
 }
 
 .why-we-title {
