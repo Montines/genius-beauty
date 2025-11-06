@@ -234,7 +234,7 @@ section {
   transform: translateX(-50%);
   width: 1905px; /* можна поставити ширше, щоб охопити весь екран */
   max-width: 200%;
-  height: 600px; /* підлаштуй під розмір твоєї SVG */
+  height: 1200px; /* підлаштуй під розмір твоєї SVG */
   background: url("../images/wave-bg.svg") no-repeat center top/cover;
   pointer-events: none;
   z-index: 2; /* поверх about-us, над why-we треба встановити why-we нижче або залишити auto */
@@ -278,8 +278,33 @@ section {
   margin-bottom: 48px;
 }
 
+.why-we-list {
+  display: flex;
+  gap: 56px;
+  justify-content: center;
+}
+
+.why-we-card {
+  border-radius: 32px;
+  background: var(--color-primary-light);
+  padding: 24px 32px;
+}
+
+.why-we-icon {
+  fill: var(--color-brand-light);
+}
+
+.why-we-icon-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 8px;
+}
+
 .why-we-text {
   line-height: 24px;
+  text-align: center;
+  max-width: 252px;
 }
 
 /* Our procedures section */
