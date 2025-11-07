@@ -38,7 +38,9 @@
 }
 
 /* Base */
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -66,6 +68,10 @@ p {
   margin-top: 0;
 }
 
+a {
+  display: inline-block;
+}
+
 address {
   font-style: normal;
 }
@@ -73,6 +79,7 @@ address {
 ul {
   list-style-type: none;
   margin: 0;
+  padding: 0;
 }
 
 section {
@@ -224,7 +231,7 @@ section {
 .about-us-section {
   position: relative;
   z-index: 1;
-  padding-bottom: 200px; /* робимо місце для перекриття хвилі */
+  padding-bottom: 200px;
 }
 
 .about-us-section::after {
@@ -232,12 +239,12 @@ section {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  width: 1905px; /* можна поставити ширше, щоб охопити весь екран */
+  width: 1905px;
   max-width: 200%;
-  height: 1200px; /* підлаштуй під розмір твоєї SVG */
+  height: 1200px;
   background: url("../images/wave-bg.svg") no-repeat center top/cover;
   pointer-events: none;
-  z-index: 2; /* поверх about-us, над why-we треба встановити why-we нижче або залишити auto */
+  z-index: 2;
 }
 
 .about-us-container {
@@ -308,6 +315,12 @@ section {
 }
 
 /* Our procedures section */
+.our-procedures-container {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
 .our-procedures-title {
   margin-bottom: 48px;
 }
@@ -315,6 +328,7 @@ section {
 .format-list {
   display: flex;
   gap: 16px;
+  padding: 0;
 }
 
 .formats-item {
@@ -335,10 +349,11 @@ section {
 }
 
 .our-procedures-text {
-  width: 152px;
+  max-width: 152px;
   color: var(--color-primary-light);
   font-size: 22px;
   line-height: 26px;
+  text-align: center;
 }
 
 /* Carousel */
@@ -346,6 +361,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   width: 44px;
   height: 44px;
   padding: 0;
@@ -364,11 +380,20 @@ section {
 
 /* Contact section */
 .contact-section {
-  padding-bottom: 47px;
+  padding-bottom: 94px;
+}
+
+.contact-container {
+  display: flex;
+  gap: 32px;
 }
 
 .contact-title {
   margin-bottom: 48px;
+}
+
+.contact-map {
+  flex-shrink: 0;
 }
 
 /* Footer */
@@ -378,7 +403,29 @@ section {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 47px;
+}
+
+.footer-container {
+  padding: 56px 100px;
+  display: flex;
+  gap: 186px;
+}
+
+.footer-nav,
+.footer-address {
+  flex-basis: 50%;
+  display: flex;
+  gap: 186px;
+}
+
+.footer-logo,
+.footer-menu {
+  flex-grow: 1;
+}
+
+.address-list,
+.address-info {
+  flex-grow: 1;
 }
 
 .address-link {
@@ -402,4 +449,5 @@ section {
 .address-copyright {
   font-size: 13px;
   color: var(--color-brand-dark);
+  margin: 0;
 }
