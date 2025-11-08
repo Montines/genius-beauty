@@ -398,11 +398,23 @@ section {
 
 /* Footer */
 .footer {
+  position: relative;
   background-image: url("../images/footer-background.png");
   background-color: var(--color-primary-dark);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.footer::after {
+  position: absolute;
+  width: 247px;
+  height: 152px;
+  bottom: 0;
+  right: 0;
+  background-image: url("../images/decor-bottles.png");
+  background-repeat: no-repeat;
+  content: "";
 }
 
 .footer-container {
@@ -450,4 +462,38 @@ section {
   font-size: 13px;
   color: var(--color-brand-dark);
   margin: 0;
+}
+
+/* Modal */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(1, 31, 74, 0.4);
+  z-index: 9999;
+}
+
+.modal {
+  position: relative;
+  width: 723px;
+  height: 681px;
+  background-color: var(--color-primary-dark);
+  border-radius: 48px;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-btn-close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
 }
