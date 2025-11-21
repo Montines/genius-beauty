@@ -9,52 +9,50 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <div class="header-container">
-          <nav class="header-nav">
-            <a href="#">
-              <img src="./images/logo.svg" alt="Логоти Beauty Zone" />
-            </a>
-            <ul class="header-menu">
-              <li>
-                <a class="header-link" href="#about-us-section">Про нас</a>
-              </li>
-              <li><a class="header-link" href="#why-we-section">Чому ми</a></li>
-              <li>
-                <a class="header-link" href="#our-procedures-section"
-                  >Наші процедури</a
-                >
-              </li>
-              <li>
-                <a class="header-link" href="#contact-section">Контакти</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="header-icons">
-            <ul class="header-icons-menu">
-              <li>
-                <a title="Іконка Телефон" href="#">
-                  <svg class="header-icon" width="32" height="32">
-                    <use href="./images/icons.svg#icon-telephone"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a title="Іконка Фейсбук" href="#">
-                  <svg class="header-icon" width="32" height="32">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a title="Іконка Інстаграм" href="#">
-                  <svg class="header-icon" width="32" height="32">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
+      <div class="header-container">
+        <nav class="header-nav">
+          <a href="#">
+            <img src="./images/logo.svg" alt="Логоти Beauty Zone" />
+          </a>
+          <ul class="header-menu">
+            <li>
+              <a class="header-link" href="#about-us-section">Про нас</a>
+            </li>
+            <li><a class="header-link" href="#why-we-section">Чому ми</a></li>
+            <li>
+              <a class="header-link" href="#our-procedures-section"
+                >Наші процедури</a
+              >
+            </li>
+            <li>
+              <a class="header-link" href="#contact-section">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-icons">
+          <ul class="header-icons-menu">
+            <li>
+              <a title="Іконка Телефон" href="#">
+                <svg class="header-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-telephone"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a title="Іконка Фейсбук" href="#">
+                <svg class="header-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a title="Іконка Інстаграм" href="#">
+                <svg class="header-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
@@ -72,6 +70,14 @@
           </p>
         </div>
       </section>
+      <div class="wave-wrapper">
+        <svg class="wave" viewBox="0 0 1440 320" preserveAspectRatio="none">
+          <path
+            fill="#ffffff"
+            d="M0,224L60,218.7C120,213,240,203,360,176C480,149,600,107,720,112C840,117,960,171,1080,186.7C1200,203,1320,181,1380,170.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+          />
+        </svg>
+      </div>
       <section class="about-us-section section" id="about-us-section">
         <div class="container">
           <div class="about-us-container">
@@ -192,7 +198,7 @@
             </ul>
             <button
               title="Стрілка Карусель"
-              class="carousel-button"
+              class="carousel-button next"
               type="button"
             >
               <svg class="carousel-arrow" width="17" height="17">
@@ -227,82 +233,80 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
-        <div class="footer-container">
-          <nav class="footer-nav">
-            <div class="footer-logo">
-              <a href="#">
-                <img src="./images/logo.svg" alt="Логоти Beauty Zone" />
+      <div class="footer-container">
+        <nav class="footer-nav">
+          <div class="footer-logo">
+            <a href="#">
+              <img src="./images/logo.svg" alt="Логоти Beauty Zone" />
+            </a>
+          </div>
+          <ul>
+            <li>
+              <a class="footer-link" href="#about-us-section">Про нас</a>
+            </li>
+            <li><a class="footer-link" href="#why-we-section">Чому ми</a></li>
+            <li>
+              <a class="footer-link" href="#our-procedures-section"
+                >Наші процедури</a
+              >
+            </li>
+            <li>
+              <a class="footer-link" href="#contact-section">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="footer-address">
+          <ul class="address-list">
+            <li>
+              <a class="address-link" href="tel:+380960000007"
+                >+ 38 (096) 000 00 07</a
+              >
+            </li>
+            <li>
+              <a class="address-link" href="mailto:beautyzone@gmail.com"
+                >beautyzone@gmail.com</a
+              >
+            </li>
+            <li>
+              <a
+                class="address-link"
+                href="https://maps.app.goo.gl/c33unndwPUVC5WBfA"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Україна, м. Київ, вул. Тараса Шевченка 5</a
+              >
+            </li>
+            <li>
+              <a title="Іконка Телефон" href="#">
+                <svg class="address-icon" width="42" height="42">
+                  <use href="./images/icons.svg#icon-telephone"></use>
+                </svg>
               </a>
-            </div>
-            <ul>
-              <li>
-                <a class="footer-link" href="#about-us-section">Про нас</a>
-              </li>
-              <li><a class="footer-link" href="#why-we-section">Чому ми</a></li>
-              <li>
-                <a class="footer-link" href="#our-procedures-section"
-                  >Наші процедури</a
-                >
-              </li>
-              <li>
-                <a class="footer-link" href="#contact-section">Контакти</a>
-              </li>
-            </ul>
-          </nav>
-          <address class="footer-address">
-            <ul class="address-list">
-              <li>
-                <a class="address-link" href="tel:+380960000007"
-                  >+ 38 (096) 000 00 07</a
-                >
-              </li>
-              <li>
-                <a class="address-link" href="mailto:beautyzone@gmail.com"
-                  >beautyzone@gmail.com</a
-                >
-              </li>
-              <li>
-                <a
-                  class="address-link"
-                  href="https://maps.app.goo.gl/c33unndwPUVC5WBfA"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Україна, м. Київ, вул. Тараса Шевченка 5</a
-                >
-              </li>
-              <li>
-                <a title="Іконка Телефон" href="#">
-                  <svg class="address-icon" width="42" height="42">
-                    <use href="./images/icons.svg#icon-telephone"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a title="Іконка Фейсбук" href="#">
-                  <svg class="address-icon" width="42" height="42">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a title="Іконка Інстаграм" href="#">
-                  <svg class="address-icon" width="42" height="42">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-            <div class="address-info">
-              <a class="address-link" href="#">Політика конфіденційності</a>
-              <p class="address-copyright">© 2025 Дані захищені</p>
-            </div>
-          </address>
-        </div>
+            </li>
+            <li>
+              <a title="Іконка Фейсбук" href="#">
+                <svg class="address-icon" width="42" height="42">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a title="Іконка Інстаграм" href="#">
+                <svg class="address-icon" width="42" height="42">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="address-info">
+            <a class="address-link" href="#">Політика конфіденційності</a>
+            <p class="address-copyright">© 2025 Дані захищені</p>
+          </div>
+        </address>
       </div>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal-btn-close" type="button">Close</button>
       </div>
