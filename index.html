@@ -230,7 +230,7 @@
               <p class="form-hero-text">
                 Запишіться безкоштовно та отримайте подарунок
               </p>
-              <form name="contact-form" autocomplete="off" novalidate>
+              <form name="contact-form" autocomplete="off">
                 <div class="form-field">
                   <label class="form-label visually-hidden" for="user-name"
                     >Ваше ім'я та прізвище</label
@@ -366,7 +366,7 @@
         <p class="form-hero-text">
           Запишіться безкоштовно та отримайте подарунок
         </p>
-        <form name="modal-form" autocomplete="off" novalidate>
+        <form name="modal-form" autocomplete="off">
           <div class="form-field">
             <label class="form-label visually-hidden" for="user-name"
               >Ваше ім'я та прізвище</label
@@ -390,6 +390,7 @@
               id="user-tel"
               name="user-tel"
               placeholder="Ваш номер телефону"
+              pattern="^\+[0-9]{12}"
             />
           </div>
 
