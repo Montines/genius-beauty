@@ -1,0 +1,45 @@
+.about-us-section {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 200px;
+}
+
+.about-us-section::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1905px;
+  max-width: 200%;
+  height: 1200px;
+  background: url("../images/wave-bg.svg") no-repeat center top/cover;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.about-us-container {
+  display: flex;
+  gap: 28px;
+}
+
+.about-us-title {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  max-width: 549px;
+}
+
+.about-us-text {
+  margin-bottom: 40px;
+  font-size: 22px;
+  line-height: 38px;
+  max-width: 844px;
+}
+
+.about-us-text .capitalize {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.about-us-text.last {
+  margin-bottom: 0;
+}
