@@ -10,9 +10,8 @@
 
 @import "./components/buttons";
 
-@import "./components/links";
-
 @import "./components/header";
+@import "./layouts/header-icons";
 
 @import "./components/hero-section";
 
@@ -21,10 +20,13 @@
 @import "./components/wave";
 
 @import "./components/about-us-section";
+@import "./layouts/texts";
 
 @import "./components/why-we-section";
+@import "./layouts/why-we-card";
 
 @import "./components/our-procedures-section";
+@import "./layouts/format-card";
 
 @import "./components/carousel";
 

@@ -1,0 +1,22 @@
+.why-we-card {
+  border-radius: 32px;
+  background: var(--color-primary-light);
+  padding: 24px 32px;
+
+  &__div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 8px;
+  }
+
+  &__icon {
+    fill: var(--color-brand-light);
+  }
+
+  &__text {
+    line-height: 24px;
+    text-align: center;
+    max-width: 252px;
+  }
+}

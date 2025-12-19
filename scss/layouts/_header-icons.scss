@@ -1,0 +1,16 @@
+.header-icons {
+  display: flex;
+
+  &__menu {
+    display: flex;
+    gap: 32px;
+  }
+
+  &__img {
+    fill: var(--color-primary-dark);
+
+    &:hover {
+      fill: var(--color-brand-light);
+    }
+  }
+}

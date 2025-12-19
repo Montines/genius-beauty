@@ -6,61 +6,72 @@
   background-position: center;
   background-size: cover;
   padding: 56px 100px;
-}
 
-.footer::after {
-  position: absolute;
-  width: 247px;
-  height: 152px;
-  bottom: 0;
-  right: 0;
-  background-image: url("../images/decor-bottles.png");
-  background-repeat: no-repeat;
-  content: "";
-}
+  &::after {
+    position: absolute;
+    width: 247px;
+    height: 152px;
+    bottom: 0;
+    right: 0;
+    background-image: url("../images/decor-bottles.png");
+    background-repeat: no-repeat;
+    content: "";
+  }
 
-.footer-container {
-  padding: 56px 100px;
-  display: flex;
-  gap: 186px;
-  width: 100%;
-  max-width: 1728px;
-  margin: 0 auto;
-  padding: 0 24px;
-}
+  &__container {
+    padding: 56px 100px;
+    display: flex;
+    gap: 186px;
+    width: 100%;
+    max-width: 1728px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
 
-.footer-nav,
-.footer-address {
-  flex-basis: 50%;
-  display: flex;
-  gap: 241px;
-}
+  &__nav,
+  &__address {
+    flex-basis: 50%;
+    display: flex;
+    gap: 241px;
+  }
 
-.address-list,
-.address-info {
-  flex-grow: 1;
-}
+  &__link {
+    color: var(--color-primary-light);
+    font-size: 16px;
+    text-decoration: none;
 
-.address-link {
-  color: var(--color-primary-light);
-  font-size: 16px;
-  text-decoration: none;
-}
+    &:hover {
+      color: var(--color-brand-light);
+      transition: color 0.3s;
+    }
+  }
 
-.address-link:hover {
-  color: var(--color-brand-light);
-}
+  &__list,
+  &__info {
+    flex-grow: 1;
+  }
 
-.address-icon {
-  fill: var(--color-primary-light);
-}
+  &__contact {
+    color: var(--color-primary-light);
+    font-size: 16px;
+    text-decoration: none;
 
-.address-icon:hover {
-  fill: var(--color-brand-light);
-}
+    &:hover {
+      color: var(--color-brand-light);
+      transition: color 0.3s;
+    }
+  }
 
-.address-copyright {
-  font-size: 13px;
-  color: var(--color-brand-dark);
-  margin: 0;
+  &__icon {
+    fill: var(--color-primary-light);
+    &:hover {
+      fill: var(--color-brand-light);
+    }
+  }
+
+  &__copyright {
+    font-size: 13px;
+    color: var(--color-brand-dark);
+    margin: 0;
+  }
 }

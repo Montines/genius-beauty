@@ -30,6 +30,8 @@ p {
 
 a {
   display: inline-block;
+  text-decoration: none;
+  color: var(--color-primary-light);
 }
 
 address {
