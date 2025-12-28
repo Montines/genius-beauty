@@ -1,5 +1,9 @@
 .header-icons {
-  display: flex;
+  display: none;
+
+  @media screen and (min-width: $bp-desktop) {
+    display: flex;
+  }
 
   &__menu {
     display: flex;

@@ -54,6 +54,16 @@
             </li>
           </ul>
         </div>
+        <button class="header__burger menu-btn-open" title="burger menu">
+          <svg width="34" height="34">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu">
+          <button class="mobile-menu__btn-close menu-btn-close" type="button">
+            Close
+          </button>
+        </div>
       </div>
     </header>
     <main>
@@ -99,12 +109,17 @@
                 З нами краса назавжди!
               </p>
             </div>
-            <div class="about-us-photos">
+            <div class="about-us-section__photos">
               <img
+                class="about-us-section__image"
                 src="./images/before-procedures.png"
                 alt="Перед процедурами"
               />
-              <img src="./images/after-procedures.png" alt="Після процедур" />
+              <img
+                class="about-us-section__image"
+                src="./images/after-procedures.png"
+                alt="Після процедур"
+              />
             </div>
           </div>
         </div>
@@ -428,5 +443,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

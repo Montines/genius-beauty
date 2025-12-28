@@ -1,7 +1,11 @@
 .about-us-section {
   position: relative;
   z-index: 1;
-  padding-bottom: 200px;
+  padding: 0;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding-bottom: 200px;
+  }
 
   &::after {
     content: "";
@@ -22,9 +26,25 @@
   }
 
   &__title {
-    margin-top: 40px;
+    margin-top: 0px;
     margin-bottom: 40px;
     max-width: 549px;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-top: 40px;
+    }
+  }
+
+  &__photos {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: inline-block;
+    }
+  }
+
+  &__image {
+    border-radius: 328px;
   }
 
   &__text {

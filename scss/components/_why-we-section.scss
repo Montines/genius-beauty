@@ -9,7 +9,12 @@
 
   &__list {
     display: flex;
+    flex-direction: column;
     gap: 56px;
     justify-content: center;
+
+    @media screen and (min-width: $bp-desktop) {
+      flex-direction: row;
+    }
   }
 }

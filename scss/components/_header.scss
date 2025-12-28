@@ -6,9 +6,13 @@
   padding-top: 32px;
   padding-bottom: 32px;
   z-index: 999;
-  background: rgba(255, 255, 255, 0.25);
-  -webkit-backdrop-filter: blur(5px); /* для Safari */
-  backdrop-filter: blur(5px);
+
+  @media screen and (min-width: $bp-desktop) {
+    padding: 42px 0 42px 0;
+    -webkit-backdrop-filter: blur(5px); /* для Safari */
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.25);
+  }
 
   &__container {
     display: flex;
@@ -26,11 +30,15 @@
   }
 
   &__menu {
-    display: flex;
-    flex-grow: 1;
-    align-items: center;
-    justify-content: center;
-    gap: 56px;
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      flex-grow: 1;
+      align-items: center;
+      justify-content: center;
+      gap: 56px;
+    }
   }
 
   &__link {
@@ -40,6 +48,17 @@
 
     &:hover {
       color: var(--color-brand-light);
+    }
+  }
+
+  &__burger {
+    background-color: transparent;
+    border: none;
+    fill: var(--color-primary-light);
+    padding: 0;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
     }
   }
 }
