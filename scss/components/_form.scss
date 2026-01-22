@@ -1,9 +1,18 @@
+.contact-form {
+  background-image: url("../images/form-background.png");
+  background-color: var(--color-primary-dark);
+  border-radius: 32px;
+}
+
 .form-hero {
   color: var(--color-primary-light);
 }
 
 .form-hero-text {
   color: var(--color-primary-light);
+  font-size: 22px;
+  padding: 0 18px;
+  text-align: center;
 }
 
 .form-field {

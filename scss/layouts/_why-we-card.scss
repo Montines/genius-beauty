@@ -4,9 +4,11 @@
   padding: 24px 32px;
   max-width: 316px;
   margin: 0 auto;
+  border: 1px solid var(--color-brand-dark);
 
   @media screen and (min-width: $bp-desktop) {
     flex-direction: row;
+    border: none;
   }
 
   &__div {
