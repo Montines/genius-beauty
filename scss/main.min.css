@@ -48,6 +48,7 @@ body {
   font-weight: 400;
   line-height: normal;
   margin: 0;
+  overflow-x: hidden;
 }
 
 main {
@@ -306,18 +307,17 @@ section {
   color: var(--color-brand-light);
   font-family: "Play", sans-serif;
   font-size: 64px;
-  margin: 0 32px auto;
+  margin: 0 32px;
   text-align: center;
   font-weight: 700;
   line-height: 114px;
   text-transform: capitalize;
-  width: 529px;
   margin: 0 auto;
 }
 @media screen and (min-width: 1280px) {
   .hero-section__title {
     text-align: left;
-    font-size: 140px;
+    font-size: 114px;
     margin: 0 0 32px 0;
   }
 }
